@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../Images/background-blur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0px auto;
+}
+
+.page-wrapper {
+  background: black;
+  opacity: 0.8;
+  border-bottom: 1px solid white;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+}
+
+.logo {
+  text-align: left;
+  padding-left: 10px;
+  max-width: 250px;
+  max-height: 200px;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+.hamburger-label {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  display: block;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 12px 25px 12px 25px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+li a:hover {
+  color: #3fa652;
+  border: 1px solid #3fa652;
+  font-weight: 500;
+}
+
+.active {
+  color: #3fa652;
+  border: 1px solid #3fa652;
+  font-weight: 500;
+}
+
+@media (min-width: 1143px) {
+  .hamburger-label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  ul {
+    float: right;
+    padding-top: 93px;
+    padding-right: 40px;
+    display: inline-flex;
+    list-style: none;
+  }
+
+  li a {
+    color: white;
+    text-align: center;
+    padding: 12px 25px 12px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  li a:hover {
+    color: #3fa652;
+    border: 1px solid #3fa652;
+    font-weight: 500;
+  }
+
+  .active {
+    color: #3fa652;
+    border: 1px solid #3fa652;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 400px) {
+  .logo {
+    float: left;
+    padding-left: 20px;
+    max-width: 400px;
+    max-height: 200px;
+  }
+}
