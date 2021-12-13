@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
+body {
+  margin: 0px;
+  height: 100vh;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  background-image: url(../Images/background-blur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  background: black;
+  opacity: 0.9;
+  border-bottom: 1px solid rgb(59, 59, 59);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.logo {
+  padding-left: 10px;
+  max-width: 250px;
+  max-height: 200px;
+}
+
+nav,
+#hamburger-menu {
+  visibility: hidden;
+  max-height: 0px;
+  transition: max-height 0.1s ease-out;
+}
+
+.hamburger-label {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin-right: 50px;
+  overflow: hidden;
+}
+
+li a {
+  color: white;
+  text-align: left;
+  display: block;
+  padding: 12px 25px 12px 25px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+li a:hover {
+  color: #3fa652;
+  border: 1px solid #3fa652;
+  font-weight: 500;
+}
+
+.active {
+  color: #3fa652;
+  border: 1px solid #3fa652;
+  font-weight: 500;
+}
+
+#hamburger-menu:checked ~ nav {
+  visibility: visible;
+  max-height: 300px;
+}
+
+main {
+  padding-top: 270px;
+}
+
+.search-bar {
+  max-width: 250px;
+  margin: 0px auto;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px 40px;
+  opacity: 0.8;
+  width: 100%;
+  color: black;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.search-bar > i {
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  right: -10px;
+  top: -32px;
+  color: black;
+  cursor: pointer;
+}
+
+.contact-section {
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 1500px;
+}
+
+.contact {
+  position: sticky;
+  background-color: white;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.title {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #e8f1e8;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-align: center;
+}
+
+.thebutton {
+  border: #21552a 1px solid;
+  background-color: #3fa652;
+  color: white;
+  padding: 15px 60px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+.thebutton:hover {
+  border: #3fa652 2px solid;
+  background-color: white;
+  color: #21552a;
+  padding: 15px 60px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.button {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.form-container {
+  text-align: center;
+  width: 800px;
+  height: 650px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: black;
+  opacity: 0.8;
+  border-top: 1px solid rgb(59, 59, 59);
+  width: 100%;
+  color: white;
+  font-weight: 300;
+  padding-bottom: 15px;
+}
+
+.museum-information {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.the-museum {
+  max-width: 250px;
+}
+
+.the-museum a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+}
+
+.the-museum a:hover {
+  color: #3fa652;
+}
+
+.hours {
+  max-width: 250px;
+}
+
+.contact-bottom {
+  max-width: 250px;
+}
+
+.copyright {
+  text-align: center;
+  align-items: center;
+}
+
+@media (min-width: 1155px) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hamburger-label {
+    visibility: hidden;
+  }
+
+  nav {
+    visibility: visible;
+  }
+
+  ul {
+    display: flex;
+    padding-top: 60px;
+    list-style: none;
+  }
+
+  li a {
+    color: white;
+    text-align: center;
+    padding: 12px 25px 12px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  li a:hover {
+    color: #3fa652;
+    border: 1px solid #3fa652;
+    font-weight: 500;
+  }
+
+  .active {
+    color: #3fa652;
+    border: 1px solid #3fa652;
+    font-weight: 500;
+  }
+
+  .search-bar {
+    max-width: 470px;
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 920px) {
+  .museum-information {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: 400px) {
+  .logo {
+    padding-left: 20px;
+    max-width: 400px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 890px) {
+  .form-container {
+    display: inline-flex;
+    text-align: center;
+    width: 650px;
+    height: 650px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 730px) {
+  .form-container {
+    display: inline-flex;
+    text-align: center;
+    width: 450px;
+    height: 650px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .form-container {
+    display: inline-flex;
+    text-align: center;
+    width: 300px;
+    height: 650px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
