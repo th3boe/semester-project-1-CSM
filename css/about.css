@@ -35,6 +35,7 @@ body {
 .logo {
   padding-left: 10px;
   max-width: 250px;
+  max-height: 200px;
 }
 
 nav,
@@ -87,17 +88,12 @@ li a:hover {
   max-height: 300px;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 30px;
   color: #21552a;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
-}
-
-h2 {
-  font-size: 24px;
-  color: #21552a;
-  font-weight: 600;
 }
 
 h3 {
@@ -111,7 +107,7 @@ p {
 }
 
 main {
-  padding-top: 240px;
+  padding-top: 270px;
 }
 
 .search-bar {
@@ -140,14 +136,14 @@ main {
   cursor: pointer;
 }
 
-.explore {
+.about-section {
   text-align: center;
   margin: 0 auto;
   padding: 30px;
   max-width: 1500px;
 }
 
-.explore-together {
+.background {
   position: sticky;
   background-color: white;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -157,73 +153,7 @@ main {
   max-width: 1440px;
 }
 
-.intro {
-  margin: 0 auto;
-  max-width: 1100px;
-  padding: 0px 20px 20px 20px;
-}
-
-.gallery {
-  margin: 0 auto;
-}
-
-.img-1 {
-  height: 250px;
-  width: 300px;
-  object-fit: cover;
-  border-radius: 30px;
-  border: 1px solid black;
-}
-
-.image-1 {
-  animation-name: anim-1;
-}
-
-.img-2 {
-  height: 250px;
-  width: 450px;
-  object-fit: cover;
-  border-radius: 30px;
-  border: 1px solid black;
-}
-
-.image-2 {
-  animation-name: anim-2;
-}
-
-.img-3 {
-  height: 250px;
-  width: 300px;
-  object-fit: cover;
-  border-radius: 30px;
-  border: 1px solid black;
-}
-
-.image-3 {
-  animation-name: anim-3;
-}
-
-.image-1,
-.image-2,
-.image-3 {
-  display: block;
-  margin: 0 auto;
-  position: absolute;
-  animation-duration: 15s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-.for-kids {
-  padding: 10px 30px 30px 30px;
-}
-
-.child-text {
-  max-width: 1150px;
-  text-align: center;
-}
-
-.child-image {
+.man-image {
   height: 500px;
   width: 250px;
   border: 1px solid black;
@@ -231,97 +161,81 @@ main {
   margin: 0px auto;
 }
 
-.teacher-image {
-  height: 250px;
-  width: 250px;
-  border: 1px solid black;
-  object-fit: cover;
-  margin: 0px auto;
-}
-
-.child-play-image {
-  height: 250px;
-  width: 250px;
-  border: 1px solid black;
-  object-fit: cover;
-  margin: 0px auto;
-}
-
-.body-image {
-  height: 500px;
-  width: 250px;
-  border: 1px solid black;
-  object-fit: cover;
-  margin: 0px auto;
-}
-
-.for-teachers {
-  padding: 10px 30px 10px 30px;
-  justify-content: space-between;
-}
-
-.teacher-text {
+.about {
   max-width: 1150px;
   text-align: center;
+  margin: 0px auto;
+  padding: 20px;
 }
 
-@keyframes anim-1 {
-  0%,
-  8.3% {
-    left: -100%;
-    opacity: 0;
-  }
-  8.3%,
-  25% {
-    left: 25%;
-    opacity: 1;
-  }
-  33.33%,
-  100% {
-    left: 110%;
-    opacity: 0;
-  }
+.title {
+  padding-top: 5px;
 }
 
-@keyframes anim-2 {
-  0%,
-  33.33% {
-    left: -100%;
-    opacity: 0;
-  }
-  41.63%,
-  58.29% {
-    left: 25%;
-    opacity: 1;
-  }
-  66.66%,
-  100% {
-    left: 110%;
-    opacity: 0;
-  }
+.get-involved-pt1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 1050px;
+  padding: 0px 20px;
+  margin: 0px auto;
 }
 
-@keyframes anim-3 {
-  0%,
-  66.66% {
-    left: -100%;
-    opacity: 0;
-  }
-  74.96%,
-  91.62% {
-    left: 25%;
-    opacity: 1;
-  }
-  100% {
-    left: 110%;
-    opacity: 0;
-  }
+.get-involved-pt2 {
+  max-width: 1150px;
+  margin: 0px auto;
+  padding: 0px 20px;
+  padding-bottom: 25px;
 }
 
-.intro-2 {
-  margin: 0 auto;
-  max-width: 1100px;
-  padding: 320px 20px 20px 20px;
+input[type="email"] {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px;
+  background-color: #e8f1e8;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.bottom {
+  padding-bottom: 15px;
+}
+
+.thebutton {
+  border: #21552a 2px solid;
+  background-color: #3fa652;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.thebutton:hover {
+  border: #3fa652 2px solid;
+  background-color: white;
+  color: #21552a;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.button {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.information-contact {
+  color: #707070;
+  font-style: italic;
+  font-weight: lighter;
+  max-width: 390px;
+  margin: 0px auto;
 }
 
 footer {
@@ -330,6 +244,7 @@ footer {
   border-top: 1px solid rgb(59, 59, 59);
   width: 100%;
   color: white;
+  font-weight: 300;
   padding-bottom: 15px;
 }
 
@@ -339,13 +254,11 @@ footer {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  font-weight: 300;
   padding-bottom: 10px;
 }
 
 .the-museum {
   max-width: 250px;
-  font-size: 17px;
 }
 
 .the-museum a {
@@ -395,7 +308,7 @@ footer {
   li a {
     color: white;
     text-align: center;
-    padding: 12px 25px;
+    padding: 12px 25px 12px 25px;
     text-decoration: none;
     font-size: 25px;
     font-weight: 300;
@@ -418,53 +331,15 @@ footer {
     position: relative;
     margin: 0 auto;
   }
+}
 
-  .img-1 {
-    height: 300px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 30px;
-    border: 1px solid black;
-  }
-
-  .img-2 {
-    height: 300px;
-    width: 500px;
-    object-fit: cover;
-    border-radius: 30px;
-    border: 1px solid black;
-  }
-
-  .img-3 {
-    height: 300px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 30px;
-    border: 1px solid black;
-  }
-
-  .teacher-image {
-    height: 300px;
-    width: 300px;
-  }
-
-  .child-play-image {
-    height: 300px;
-    width: 300px;
+@media (min-width: 1072px) {
+  .title {
+    padding-top: 100px;
   }
 }
 
 @media (min-width: 920px) {
-  .teacher-image {
-    float: right;
-    margin: 20px 20px 20px 40px;
-  }
-
-  .child-play-image {
-    float: right;
-    margin: 20px 20px 20px 40px;
-  }
-
   .museum-information {
     display: flex;
     flex-direction: row;
@@ -474,36 +349,22 @@ footer {
 }
 
 @media (min-width: 650px) {
-  .child-image {
+  .man-image {
     height: 500px;
     width: 300px;
     float: left;
-    margin: 20px 20px 20px 40px;
+    margin: 20px;
+    margin-left: 50px;
   }
 
-  .for-kids {
-    float: left;
-    padding: 10px 70px;
-  }
-
-  .child-text {
+  .about {
     text-align: left;
+    padding: 20px;
   }
 
-  .body-image {
-    height: 500px;
-    width: 300px;
-    float: left;
-    margin: 20px 20px 20px 40px;
-  }
-
-  .for-teachers {
-    float: left;
-    padding: 10px 70px;
-  }
-
-  .teacher-text {
-    text-align: left;
+  .get-involved-pt1 {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -511,6 +372,6 @@ footer {
   .logo {
     padding-left: 20px;
     max-width: 400px;
-    max-height: 170px;
+    max-height: 200px;
   }
 }
