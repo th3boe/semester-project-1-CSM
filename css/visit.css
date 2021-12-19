@@ -35,7 +35,6 @@ body {
 .logo {
   padding-left: 10px;
   max-width: 250px;
-  max-height: 200px;
 }
 
 nav,
@@ -107,7 +106,7 @@ p {
 }
 
 main {
-  padding-top: 270px;
+  padding-top: 240px;
 }
 
 .search-bar {
@@ -140,7 +139,7 @@ main {
   text-align: center;
   margin: 0 auto;
   padding: 30px;
-  max-width: 1500px;
+  max-width: 1400px;
 }
 
 .background {
@@ -150,7 +149,7 @@ main {
   opacity: 0.9;
   border: 1px solid black;
   overflow: hidden;
-  max-width: 1440px;
+  max-width: 1400px;
 }
 
 .visit-pt-1 {
@@ -181,6 +180,7 @@ main {
   width: 100%;
   height: 180px;
   border: 1px solid black;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   object-fit: cover;
 }
 
@@ -208,15 +208,21 @@ main {
 
 .events {
   text-align: center;
-  max-width: 1050px;
+  max-width: 1300px;
   margin: 0px auto;
   padding: 20px;
+}
+
+#events {
+  margin-top: -210px;
+  padding-top: 210px;
 }
 
 .child-vr {
   height: 400px;
   width: 250px;
   border: 1px solid black;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   object-fit: cover;
   margin: 0px auto;
 }
@@ -225,8 +231,6 @@ input[type="email"] {
   width: 100%;
   max-width: 280px;
   padding: 12px;
-  background-color: #e8f1e8;
-  border: 1px solid black;
   border-radius: 30px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -235,11 +239,15 @@ input[type="email"] {
   font-size: 18px;
   font-style: italic;
   font-weight: lighter;
+  background-color: #fffffa;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
-.thebutton {
+.the-button {
   border: #21552a 2px solid;
   background-color: #3fa652;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -247,9 +255,10 @@ input[type="email"] {
   border-radius: 30px;
 }
 
-.thebutton:hover {
+.the-button:hover {
   border: #3fa652 2px solid;
   background-color: white;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   color: #21552a;
   padding: 10px 20px;
   text-decoration: none;
@@ -308,7 +317,7 @@ footer {
 }
 
 .hours {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .contact-bottom {
@@ -396,7 +405,7 @@ footer {
   }
 
   .child-vr {
-    height: 400px;
+    height: 450px;
     width: 300px;
     float: left;
     margin: 20px;
@@ -412,8 +421,9 @@ footer {
     width: 100%;
     max-width: 600px;
     padding: 12px;
-    background-color: #e8f1e8;
+    background-color: #fffffa;
     border: 1px solid black;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -429,6 +439,6 @@ footer {
   .logo {
     padding-left: 20px;
     max-width: 400px;
-    max-height: 200px;
+    max-height: 170px;
   }
 }

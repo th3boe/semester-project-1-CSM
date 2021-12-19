@@ -23,7 +23,7 @@ body {
   background: black;
   opacity: 0.9;
   border-bottom: 1px solid rgb(59, 59, 59);
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   width: 100%;
   position: fixed;
   z-index: 3;
@@ -144,17 +144,46 @@ main {
   text-align: center;
   margin: 0 auto;
   padding: 30px;
-  max-width: 1500px;
+  max-width: 1400px;
 }
 
 .explore-together {
   position: sticky;
   background-color: white;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   opacity: 0.9;
   border: 1px solid black;
   overflow: hidden;
-  max-width: 1440px;
+  max-width: 1400px;
+}
+
+.the-button-1,
+.the-button-2 {
+  border: #21552a 2px solid;
+  background-color: #3fa652;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.the-button-1:hover,
+.the-button-2:hover {
+  border: #3fa652 2px solid;
+  background-color: white;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  color: #21552a;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.button-events,
+.button-get-involved {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
 }
 
 .intro {
@@ -169,10 +198,11 @@ main {
 
 .img-1 {
   height: 250px;
-  width: 300px;
+  width: 290px;
   object-fit: cover;
   border-radius: 30px;
   border: 1px solid black;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .image-1 {
@@ -181,10 +211,11 @@ main {
 
 .img-2 {
   height: 250px;
-  width: 450px;
+  width: 290px;
   object-fit: cover;
   border-radius: 30px;
   border: 1px solid black;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .image-2 {
@@ -193,10 +224,11 @@ main {
 
 .img-3 {
   height: 250px;
-  width: 300px;
+  width: 290px;
   object-fit: cover;
   border-radius: 30px;
   border: 1px solid black;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .image-3 {
@@ -209,7 +241,7 @@ main {
   display: block;
   margin: 0 auto;
   position: absolute;
-  animation-duration: 15s;
+  animation-duration: 18s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -228,6 +260,7 @@ main {
   width: 250px;
   border: 1px solid black;
   object-fit: cover;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   margin: 0px auto;
 }
 
@@ -236,6 +269,7 @@ main {
   width: 250px;
   border: 1px solid black;
   object-fit: cover;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   margin: 0px auto;
 }
 
@@ -244,6 +278,7 @@ main {
   width: 250px;
   border: 1px solid black;
   object-fit: cover;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   margin: 0px auto;
 }
 
@@ -252,6 +287,7 @@ main {
   width: 250px;
   border: 1px solid black;
   object-fit: cover;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   margin: 0px auto;
 }
 
@@ -273,8 +309,9 @@ main {
   }
   8.3%,
   25% {
-    left: 25%;
+    left: 50%;
     opacity: 1;
+    transform: translate(-50%, 0);
   }
   33.33%,
   100% {
@@ -291,8 +328,9 @@ main {
   }
   41.63%,
   58.29% {
-    left: 25%;
+    left: 50%;
     opacity: 1;
+    transform: translate(-50%, 0);
   }
   66.66%,
   100% {
@@ -309,8 +347,9 @@ main {
   }
   74.96%,
   91.62% {
-    left: 25%;
+    left: 50%;
     opacity: 1;
+    transform: translate(-50%, 0);
   }
   100% {
     left: 110%;
@@ -360,7 +399,7 @@ footer {
 }
 
 .hours {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .contact-bottom {
@@ -419,30 +458,6 @@ footer {
     margin: 0 auto;
   }
 
-  .img-1 {
-    height: 300px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 30px;
-    border: 1px solid black;
-  }
-
-  .img-2 {
-    height: 300px;
-    width: 500px;
-    object-fit: cover;
-    border-radius: 30px;
-    border: 1px solid black;
-  }
-
-  .img-3 {
-    height: 300px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 30px;
-    border: 1px solid black;
-  }
-
   .teacher-image {
     height: 300px;
     width: 300px;
@@ -455,16 +470,6 @@ footer {
 }
 
 @media (min-width: 920px) {
-  .teacher-image {
-    float: right;
-    margin: 20px 20px 20px 40px;
-  }
-
-  .child-play-image {
-    float: right;
-    margin: 20px 20px 20px 40px;
-  }
-
   .museum-information {
     display: flex;
     flex-direction: row;
@@ -478,6 +483,11 @@ footer {
     height: 500px;
     width: 300px;
     float: left;
+    margin: 20px 20px 20px 40px;
+  }
+
+  .child-play-image {
+    float: right;
     margin: 20px 20px 20px 40px;
   }
 
@@ -497,6 +507,11 @@ footer {
     margin: 20px 20px 20px 40px;
   }
 
+  .teacher-image {
+    float: right;
+    margin: 20px 20px 20px 40px;
+  }
+
   .for-teachers {
     float: left;
     padding: 10px 70px;
@@ -504,6 +519,30 @@ footer {
 
   .teacher-text {
     text-align: left;
+  }
+
+  .img-1 {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px solid black;
+  }
+
+  .img-2 {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px solid black;
+  }
+
+  .img-3 {
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px solid black;
   }
 }
 

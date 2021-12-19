@@ -23,7 +23,7 @@ body {
   background: black;
   opacity: 0.9;
   border-bottom: 1px solid rgb(59, 59, 59);
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   width: 100%;
   position: fixed;
   z-index: 3;
@@ -35,7 +35,6 @@ body {
 .logo {
   padding-left: 10px;
   max-width: 250px;
-  max-height: 200px;
 }
 
 nav,
@@ -107,7 +106,7 @@ p {
 }
 
 main {
-  padding-top: 270px;
+  padding-top: 240px;
 }
 
 .search-bar {
@@ -140,17 +139,17 @@ main {
   text-align: center;
   margin: 0 auto;
   padding: 30px;
-  max-width: 1500px;
+  max-width: 1400px;
 }
 
 .background {
   position: sticky;
   background-color: white;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   opacity: 0.9;
   border: 1px solid black;
   overflow: hidden;
-  max-width: 1440px;
+  max-width: 1400px;
 }
 
 .man-image {
@@ -158,24 +157,54 @@ main {
   width: 250px;
   border: 1px solid black;
   object-fit: cover;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   margin: 0px auto;
 }
 
 .about {
-  max-width: 1150px;
+  max-width: 1350px;
   text-align: center;
   margin: 0px auto;
   padding: 20px;
 }
 
-.title {
-  padding-top: 5px;
+.painter {
+  height: 200px;
+  width: 250px;
+  border: 1px solid black;
+  object-fit: cover;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  margin: 0px auto;
+}
+
+.volunteer {
+  background-color: #fffffa;
+  border: 1px groove rgb(252, 252, 252);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 5px;
+}
+
+.support {
+  background-color: #fffffa;
+  border: 1px groove rgb(252, 252, 252);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 5px;
+}
+
+.internship {
+  background-color: #fffffa;
+  border: 1px groove rgb(252, 252, 252);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 5px 5px 15px 5px;
 }
 
 .get-involved-pt1 {
   display: flex;
   flex-direction: column;
-  max-width: 1050px;
+  max-width: 1150px;
   padding: 0px 20px;
   margin: 0px auto;
 }
@@ -187,29 +216,30 @@ main {
   padding-bottom: 25px;
 }
 
-input[type="email"] {
-  width: 100%;
-  max-width: 600px;
-  padding: 12px;
-  background-color: #e8f1e8;
-  border: 1px solid black;
-  border-radius: 30px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: lighter;
+#involved {
+  margin-top: -200px;
+  padding-top: 200px;
 }
 
-.bottom {
-  padding-bottom: 15px;
+#donate {
+  margin-top: -200px;
+  padding-top: 200px;
 }
 
-.thebutton {
+#volunteer-internship {
+  margin-top: -200px;
+  padding-top: 200px;
+}
+
+#pull-up-title {
+  margin-top: -200px;
+  padding-top: 200px;
+}
+
+.the-button {
   border: #21552a 2px solid;
   background-color: #3fa652;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -217,9 +247,10 @@ input[type="email"] {
   border-radius: 30px;
 }
 
-.thebutton:hover {
+.the-button:hover {
   border: #3fa652 2px solid;
   background-color: white;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   color: #21552a;
   padding: 10px 20px;
   text-decoration: none;
@@ -234,7 +265,7 @@ input[type="email"] {
   color: #707070;
   font-style: italic;
   font-weight: lighter;
-  max-width: 390px;
+  max-width: 480px;
   margin: 0px auto;
 }
 
@@ -273,7 +304,7 @@ footer {
 }
 
 .hours {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .contact-bottom {
@@ -346,6 +377,13 @@ footer {
     justify-content: space-evenly;
     padding-bottom: 15px;
   }
+
+  .painter {
+    float: right;
+    height: 300px;
+    width: 350px;
+    margin: 20px 20px 20px 40px;
+  }
 }
 
 @media (min-width: 650px) {
@@ -358,6 +396,7 @@ footer {
   }
 
   .about {
+    float: left;
     text-align: left;
     padding: 20px;
   }
@@ -365,6 +404,7 @@ footer {
   .get-involved-pt1 {
     display: flex;
     flex-direction: row;
+    margin: 0px auto;
   }
 }
 
@@ -372,6 +412,6 @@ footer {
   .logo {
     padding-left: 20px;
     max-width: 400px;
-    max-height: 200px;
+    max-height: 170px;
   }
 }

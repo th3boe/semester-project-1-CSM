@@ -35,7 +35,6 @@ body {
 .logo {
   padding-left: 10px;
   max-width: 250px;
-  max-height: 200px;
 }
 
 nav,
@@ -107,7 +106,7 @@ p {
 }
 
 main {
-  padding-top: 270px;
+  padding-top: 240px;
 }
 
 .search-bar {
@@ -140,7 +139,7 @@ main {
   text-align: center;
   margin: 0 auto;
   padding: 30px;
-  max-width: 1500px;
+  max-width: 1400px;
 }
 
 .background {
@@ -150,19 +149,20 @@ main {
   opacity: 0.9;
   border: 1px solid black;
   overflow: hidden;
-  max-width: 1440px;
+  max-width: 1400px;
 }
 
 .skeleton {
   height: 250px;
   width: 250px;
   border: 1px solid black;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   object-fit: cover;
   margin: 0px auto;
 }
 
 .evolution {
-  max-width: 1150px;
+  max-width: 1300px;
   text-align: center;
   padding: 20px;
 }
@@ -171,12 +171,13 @@ main {
   height: 250px;
   width: 250px;
   border: 1px solid black;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   object-fit: cover;
   margin: 0px auto;
 }
 
 .cosmology {
-  max-width: 1150px;
+  max-width: 1300px;
   text-align: center;
   padding: 20px;
 }
@@ -185,10 +186,11 @@ main {
   height: 130px;
   width: 100%;
   object-fit: cover;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .below-planets {
-  max-width: 1150px;
+  max-width: 1300px;
   margin-bottom: 20px;
 }
 
@@ -206,6 +208,7 @@ main {
   height: 250px;
   width: 250px;
   border: 1px solid black;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   object-fit: cover;
   margin: 0px auto;
 }
@@ -214,6 +217,7 @@ main {
   height: 250px;
   width: 250px;
   border: 1px solid black;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   object-fit: cover;
   margin: 0px auto;
 }
@@ -253,7 +257,7 @@ footer {
 }
 
 .hours {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .contact-bottom {
@@ -322,10 +326,56 @@ footer {
   }
 }
 
+@media (min-width: 770px) {
+  .scientist {
+    height: 350px;
+    width: 350px;
+  }
+
+  .scientific-robotics {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 715px) {
+  .evolution {
+    background-color: #fffffa;
+    border: 1px groove rgb(252, 252, 252);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 20px 130px 20px 20px;
+    margin: 20px;
+  }
+
+  .cosmology {
+    background-color: #fffffa;
+    border: 1px groove rgb(252, 252, 252);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 20px 20px 20px 60px;
+    margin: 20px;
+  }
+
+  .biology {
+    background-color: #fffffa;
+    border: 1px groove rgb(252, 252, 252);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 20px 80px 20px 20px;
+    margin: 20px;
+  }
+
+  .robotics-and-ecology {
+    background-color: #fffffa;
+    border: 1px groove rgb(252, 252, 252);
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+    padding: 20px 80px 20px 20px;
+    margin: 20px;
+  }
+}
+
 @media (min-width: 650px) {
   .skeleton {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     float: left;
     margin: 20px 20px 20px 40px;
   }
@@ -336,10 +386,10 @@ footer {
   }
 
   .astronaut {
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     float: right;
-    margin: 20px 40px 20px 20px;
+    margin: 20px 20px 20px 20px;
   }
 
   .cosmology {
@@ -354,28 +404,24 @@ footer {
     object-fit: cover;
   }
 
-  .scientist {
-    height: 400px;
-    width: 400px;
-    float: left;
-    margin: 20px 20px 20px 40px;
-  }
-
   .biology {
     float: left;
     text-align: left;
   }
 
-  .scientific-robotics {
-    height: 400px;
-    width: 400px;
+  .robotics-and-ecology {
+    float: left;
+    text-align: left;
+  }
+
+  .scientist {
     float: left;
     margin: 20px 20px 20px 40px;
   }
 
-  .robotics-and-ecology {
+  .scientific-robotics {
     float: left;
-    text-align: left;
+    margin: 20px 20px 20px 40px;
   }
 }
 
@@ -383,6 +429,6 @@ footer {
   .logo {
     padding-left: 20px;
     max-width: 400px;
-    max-height: 200px;
+    max-height: 170px;
   }
 }

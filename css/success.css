@@ -35,7 +35,6 @@ body {
 .logo {
   padding-left: 10px;
   max-width: 250px;
-  max-height: 200px;
 }
 
 nav,
@@ -89,7 +88,7 @@ li a:hover {
 }
 
 main {
-  padding-top: 270px;
+  padding-top: 240px;
 }
 
 .search-bar {
@@ -118,21 +117,69 @@ main {
   cursor: pointer;
 }
 
-.explore {
+.thank-you {
   text-align: center;
   margin: 0 auto;
   padding: 30px;
-  max-width: 1500px;
+  max-width: 1400px;
 }
 
-.explore-together {
+.background {
   position: sticky;
   background-color: white;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
   opacity: 0.9;
   border: 1px solid black;
   overflow: hidden;
-  max-width: 1440px;
+  max-width: 1400px;
+}
+
+h1 {
+  margin: 0px auto;
+  font-size: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #21552a;
+  padding: 20px;
+}
+
+h2 {
+  margin: 0px auto;
+  font-size: 30px;
+}
+
+.background p {
+  margin: 0px auto;
+  max-width: 450px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: lighter;
+  padding: 20px;
+}
+
+.the-button {
+  border: #21552a 2px solid;
+  background-color: #3fa652;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.the-button:hover {
+  border: #3fa652 2px solid;
+  background-color: white;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  color: #21552a;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.return {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
 }
 
 footer {
@@ -170,7 +217,7 @@ footer {
 }
 
 .hours {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 .contact-bottom {
@@ -246,6 +293,6 @@ footer {
   .logo {
     padding-left: 20px;
     max-width: 400px;
-    max-height: 200px;
+    max-height: 170px;
   }
 }
