@@ -35,6 +35,7 @@ body {
 .logo {
   padding-left: 10px;
   max-width: 250px;
+  max-height: 110px;
 }
 
 nav,
@@ -106,7 +107,7 @@ p {
 }
 
 main {
-  padding-top: 240px;
+  padding-top: 220px;
 }
 
 .search-bar {
@@ -430,5 +431,9 @@ footer {
     padding-left: 20px;
     max-width: 400px;
     max-height: 170px;
+  }
+
+  main {
+    padding-top: 240px;
   }
 }

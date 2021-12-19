@@ -35,6 +35,7 @@ body {
 .logo {
   padding-left: 10px;
   max-width: 250px;
+  max-height: 110px;
 }
 
 nav,
@@ -88,7 +89,7 @@ li a:hover {
 }
 
 main {
-  padding-top: 240px;
+  padding-top: 220px;
 }
 
 .search-bar {
@@ -127,7 +128,7 @@ main {
 .background {
   position: sticky;
   background-color: white;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
   opacity: 0.9;
   border: 1px solid black;
   overflow: hidden;
@@ -286,13 +287,14 @@ footer {
   }
 }
 
-@media (min-width: 650px) {
-}
-
 @media (min-width: 400px) {
   .logo {
     padding-left: 20px;
     max-width: 400px;
     max-height: 170px;
+  }
+
+  main {
+    padding-top: 240px;
   }
 }

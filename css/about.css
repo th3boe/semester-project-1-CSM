@@ -35,6 +35,7 @@ body {
 .logo {
   padding-left: 10px;
   max-width: 250px;
+  max-height: 110px;
 }
 
 nav,
@@ -106,7 +107,7 @@ p {
 }
 
 main {
-  padding-top: 240px;
+  padding-top: 220px;
 }
 
 .search-bar {
@@ -153,7 +154,7 @@ main {
 }
 
 .man-image {
-  height: 500px;
+  height: 400px;
   width: 250px;
   border: 1px solid black;
   object-fit: cover;
@@ -217,8 +218,8 @@ main {
 }
 
 #involved {
-  margin-top: -200px;
-  padding-top: 200px;
+  margin-top: -250px;
+  padding-top: 250px;
 }
 
 #donate {
@@ -413,5 +414,9 @@ footer {
     padding-left: 20px;
     max-width: 400px;
     max-height: 170px;
+  }
+
+  main {
+    padding-top: 240px;
   }
 }
