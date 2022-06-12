@@ -1,6 +1,6 @@
 # COMMUNITY SCIENCE MUSEUM
 
-![image](images/csm.png)
+![Community Science Museum Image](images/csm.png)
 
 The semester project was to make a working website for a new local community science museum. Target audience was middle school children and their families.
 
