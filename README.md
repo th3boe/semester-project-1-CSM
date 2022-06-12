@@ -14,8 +14,8 @@ After the logo was created a process started with making a design that would att
 
 keywords:
 
-HTML - setup
-CSS - older museum theme
+- HTML - build
+- CSS - older museum theme
 
 ## Built With
 
